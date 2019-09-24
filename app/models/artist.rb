@@ -7,11 +7,11 @@ class Artist
   def initialize(name, years_experience)
     @name = name
     @years_experience = years_experience
-    @@all << self 
+    @@all << self
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
   def paintings
@@ -24,7 +24,7 @@ class Artist
     end
   end
 
-  def cities 
+  def cities
     galleries.map do |gallery|
       gallery.city
     end
@@ -50,4 +50,3 @@ class Artist
 
 
 end
-
