@@ -12,18 +12,18 @@ class Painting
     @@all << self
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
   def self.total_price
     totalprice = 0
     self.all.each do |painting|
-      totalprice += painting.price 
+      totalprice += painting.price
     end
     totalprice
   end
 
-  
+
 
 end
